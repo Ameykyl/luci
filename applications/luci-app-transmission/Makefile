@@ -7,9 +7,9 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI Support for Transmission
-LUCI_DEPENDS:=
-PKG_VERSION:=1.0.1
+LUCI_DEPENDS:=+transmission-daemon-openssl +transmission-web-control
 
 include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
+
